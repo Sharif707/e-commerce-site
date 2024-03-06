@@ -1,0 +1,35 @@
+/* --------Media queries for navbar----------- */
+@media only screen and (max-width: 992px) {
+  .mob-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .mob-nav a i {
+    font-size: 40px;
+    color: #29293a;
+  }
+  .mob-nav img {
+    max-width: 150px;
+    margin-left: 15px;
+  }
+}
+
+/* --------Media queries for hero-section----------- */
+@media only screen and (max-width: 992px) {
+    .social-links {
+        
+      
+        transform: translateX(50%);
+        bottom: 0;
+       
+      
+        flex-direction: row;
+       
+        margin-left: 10px;
+      }
+}
