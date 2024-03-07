@@ -1,3 +1,16 @@
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
 /* --------Media queries for navbar----------- */
 @media only screen and (max-width: 992px) {
   .mob-nav {
@@ -21,15 +34,57 @@
 
 /* --------Media queries for hero-section----------- */
 @media only screen and (max-width: 992px) {
-    .social-links {
-        
-      
-        transform: translateX(50%);
-        bottom: 0;
-       
-      
-        flex-direction: row;
-       
-        margin-left: 10px;
-      }
+  .hero-section {
+    transform: none;
+    padding-top: 120px;
+  }
+  .hero-section h1 {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-section .hero-content form {
+    flex-direction: column;
+  }
+  .social-links {
+    flex-direction: row;
+    margin-left: 10px;
+    position: unset;
+
+    margin-top: 60px;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+/* ----media queries for mobile -------- */
+@media only screen and (max-width: 450px) {
+  .hero-section {
+    padding-top: 80px;
+  }
+  .hero-section h1 {
+    font-size: 25px;
+  }
+  .hero-section .hero-content form {
+    gap: 25px;
+  }
+  .hero-section .hero-content aside {
+    margin-top: 50px;
+  }
+  .hero-section .hero-content form p, .hero-section .hero-content form button {
+    padding: 10px 15px;
+
+    
+  }
+  .hero-section .hero-content form button {
+    font-size: 18px!important;
+  }
 }
