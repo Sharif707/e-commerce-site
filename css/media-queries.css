@@ -1,13 +1,30 @@
+/* -------media queries for container ------------- */
+@media only screen and (max-width: 1150px) {
+  .container {
+    max-width: 1080px;
+ 
+  }
+}
 @media only screen and (max-width: 992px) {
   .container {
     max-width: 920px;
-    margin: 0 auto;
+    
   }
 }
 @media only screen and (max-width: 700px) {
   .container {
     max-width: 600px;
-    margin: 0 auto;
+   
+  }
+}
+@media only screen and (max-width: 992px) {
+  header .container .navbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .mobile-header .mob-nav {
+    display: none;
   }
 }
 
@@ -17,7 +34,7 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: white;
+    background: #fff;
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,41 +49,54 @@
   }
 }
 
+/* ----media queries for video background-------- */
+@media (max-aspect-ratio: 16/9) {
+  header video {
+    height: 100%;
+    width: auto;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  header video {
+    height: auto;
+    width: 100%;
+  }
+}
+
 /* --------Media queries for hero-section----------- */
 @media only screen and (max-width: 992px) {
   .hero-section {
     transform: none;
-    padding-top: 120px;
+    padding-top: 80px;
   }
   .hero-section h1 {
-    width: 100%;
-    font-size: 36px;
+    font-size: 25px;
     text-align: center;
   }
   .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 40px;
   }
   .hero-section .hero-content form {
     flex-direction: column;
+    gap: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .social-links {
     flex-direction: row;
     margin-left: 10px;
     position: unset;
-
-    margin-top: 60px;
+    margin-top: 50px;
     justify-content: center;
   }
 }
 
-
-
-
-
 /* ----media queries for mobile -------- */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 660px) {
   .hero-section {
     padding-top: 80px;
   }
@@ -74,17 +104,28 @@
     font-size: 25px;
   }
   .hero-section .hero-content form {
-    gap: 25px;
+    margin-top: 15px;
+    gap: 10px;
   }
-  .hero-section .hero-content aside {
-    margin-top: 50px;
-  }
-  .hero-section .hero-content form p, .hero-section .hero-content form button {
-    padding: 10px 15px;
+}
+.hero-section .hero-content aside {
+  margin-top: 50px;
+}
+.hero-section .hero-content form p,
+.hero-section .hero-content form button {
+  padding: 10px 15px;
+}
+.hero-section .hero-content form button {
+  font-size: 18px;
+}
 
-    
+@media only screen and (max-width: 450px) {
+  .mob-nav a i {
+    font-size: 20px;
   }
-  .hero-section .hero-content form button {
-    font-size: 18px!important;
+}
+@media only screen and (max-width: 1050px) {
+  .hero-section .hero-content form {
+    gap: 20px;
   }
 }

@@ -1,18 +1,30 @@
 /* -----header section ----------- */
 header {
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+position: relative;
+  width: 100%;
+  height: 100vh;
+
+
+  
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 header .container .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 0;
-  background-color: #fff;
+  background: transparent;
   box-shadow: rgba(98, 103, 119, 0.09);
   position: fixed;
   width: 100%;
@@ -58,6 +70,7 @@ header .container .navbar {
   align-items: center;
 }
 
+
 /* .home:hover .sub-menu {
   
 } */
@@ -98,6 +111,7 @@ header .container .navbar {
 /* --------hero section ------ */
 .hero-section {
  transform: translateY(50%);
+ padding: 60px 0;
 }
 
 .hero-section h1 {
@@ -106,17 +120,19 @@ header .container .navbar {
   width: 100%;
   color: white;
 }
+
 .hero-section .hero-content form {
   margin-top: 50px;
   display: flex;
   align-items: center;
   gap: 50px;
+ 
   
  
 }
 .hero-section .hero-content form p {
-min-width: 300px;
-width: 100%;
+min-width: 260px;
+
   padding: 15px 25px;
   background: #fff;
   display: flex;
@@ -127,8 +143,8 @@ width: 100%;
   color: #29293a;
 }
 .hero-section .hero-content form button {
-  min-width: 300px;
-  width: 100%;
+min-width: 260px;
+ 
   padding: 15px 25px;
   border-radius: 5px;
   color: #fff;
@@ -144,9 +160,9 @@ width: 100%;
 .social-links {
   position: absolute;
 
-transform: translateY(-50%);
+transform: translateY(-70%);
  top: 50%;
-  right: -50px;
+  right: -80px;
   display: flex;
   flex-direction: column;
   gap: 10px;

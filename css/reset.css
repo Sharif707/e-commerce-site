@@ -33,7 +33,7 @@ svg {
 }
 .container {
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 .row {
@@ -41,7 +41,7 @@ svg {
 }
 body {
   font-family: sans-serif;
-  background-color: purple;
+
 
 }
 
