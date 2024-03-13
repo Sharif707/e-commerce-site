@@ -1,22 +1,30 @@
 /* -------media queries for container ------------- */
-@media only screen and (max-width: 1150px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1080px;
+    max-width: 1200px;
  
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1199px) {
   .container {
-    max-width: 920px;
-    
+    max-width: 960px;
+ 
   }
 }
+
 @media only screen and (max-width: 700px) {
   .container {
     max-width: 600px;
    
   }
 }
+@media only screen and (max-width: 550px) {
+  .container {
+    max-width: 450px;
+   
+  }
+}
+
 @media only screen and (max-width: 992px) {
   header .container .navbar {
     display: none;
@@ -38,6 +46,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    border-bottom-color: 3px solid rgb(115, 242, 24);
   }
   .mob-nav a i {
     font-size: 40px;
@@ -50,18 +59,7 @@
 }
 
 /* ----media queries for video background-------- */
-@media (max-aspect-ratio: 16/9) {
-  header video {
-    height: 100%;
-    width: auto;
-  }
-}
-@media (min-aspect-ratio: 16/9) {
-  header video {
-    height: auto;
-    width: 100%;
-  }
-}
+
 
 /* --------Media queries for hero-section----------- */
 @media only screen and (max-width: 992px) {
@@ -128,4 +126,197 @@
   .hero-section .hero-content form {
     gap: 20px;
   }
+}
+
+
+
+/* ---selling-section--------- */
+@media only screen and (max-width: 992px) {
+  .selling-section .container {
+    max-width: 720px;
+  }
+  .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-images > a {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+.grid-section {
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: none;
+}
+.selling-section .container button {
+  padding: 10px 15px;
+}
+}
+
+
+/* -----about section---- */
+@media only screen and (max-width: 1200px) {
+  .div-flex {
+    flex-wrap: wrap;
+  }
+  .col-even {
+    flex:0 0 40%;
+    max-width: 40%;
+   }
+   .col-medium {
+    flex: 0 0 50%;
+    max-width: 50%;
+   }
+   .col-big {
+    flex: 0 0 50%;
+    max-width: 100%;
+    margin: 50px auto 0 auto;
+    
+   }
+   .col-big h1 {
+    text-align: center;
+   }
+}
+@media only screen and (max-width: 768px) {
+  .div-flex {
+    justify-content: center;
+  }
+  .col-even {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-big {
+    flex: 0 0 100%;
+    margin: 50px 0 0 0;
+
+  }
+ 
+
+  .col-medium {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px;
+   }
+   .selling-img {
+    gap: 15px;
+    justify-content: center;
+   flex-wrap: nowrap;
+   }
+   
+}
+
+
+@media only screen and (max-width: 992px) {
+  .card-item-1 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  .card-flex {
+    margin-top: 30px;
+  }
+  .card-section h1 {
+    
+    font-size: 36px;
+  }
+  .card-section button {
+    
+    margin: 25px auto 0 auto;
+ font-size: 22px;
+ padding: 10px 30px;
+   
+  }
+  .card-item-2 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  .card-item-3{
+   flex: 0 0 100%;
+   max-width: 100%;
+}
+}
+@media only screen and (max-width: 768px) {
+  .card-flex {
+    flex-direction: column;
+  align-items: center;
+  }
+  .card-item {
+    flex: 0 0 85%;
+    max-width: 85%;
+    padding: 25px 35px 25px 35px;
+ 
+   
+  }
+  .quote p {
+    line-height: 1.3;
+    
+   
+  }
+}
+
+
+
+
+
+/* ---------footer section--------- */
+@media only screen and (max-width: 992px) {
+  .footer-short {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer-even {
+    flex: 0 0 48%;
+    max-width: 48%;
+    
+  }
+  .content-heading{
+    text-align: center;
+  }
+  .footer-short .first-article {
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer-short .first-article .tour-details {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+  }
+
+}
+@media only screen and (max-width: 720px) {
+  .footer-short .first-article {
+    align-items: center;
+  }
+
+  .footer-short .first-article .tour-details {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .footer-even {
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+  }
+  .footer-flex {
+    width: 100%;
+    max-width: fit-content;
+    padding: 0;
+  }
+  article .tour-details span {
+    font-size: 16px;
+  }
+  article .tour-details h1 {
+    font-size: 28px;
+   
+  }
+  .about-content p {
+   
+    font-size: 16px;
+    text-align: justify;
+   
+  }
+ 
+  
 }

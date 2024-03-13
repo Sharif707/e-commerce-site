@@ -30,6 +30,8 @@ svg {
   padding: 10px 50px;
   background-color: #0ab193;
   font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
 }
 .container {
   max-width: 1200px;
